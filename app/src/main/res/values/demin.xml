@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ico_side">40dp</dimen>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="little_title_size">20sp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="text_margin">15dp</dimen>
+    <dimen name="title_padding">5dp</dimen>
+    <dimen name="card_view_margin">5dp</dimen>
+    <dimen name="card_view_radius">7dp</dimen>
+    <dimen name="card_view_elevation">5dp</dimen>
+</resources>

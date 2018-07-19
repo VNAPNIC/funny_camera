@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="filter">
+        <item>原始</item>
+        <item>灰阶</item>
+        <item>浮雕</item>
+        <item>字符</item>
+    </string-array>
+    <string-array name="sticker">
+        <item>无</item>
+        <item>眼镜</item>
+        <item>胡须</item>
+        <item>脸谱</item>
+    </string-array>
+</resources>

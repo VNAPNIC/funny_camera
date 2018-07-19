@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="top.icecream.testme.main.MainActivity"
+    android:keepScreenOn="true">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/glSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/changeCameraBtn"
+        android:layout_width="@dimen/ico_side"
+        android:layout_height="@dimen/ico_side"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_autorenew"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/infoBtn"
+        android:layout_width="@dimen/ico_side"
+        android:layout_height="@dimen/ico_side"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_info"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/stickerBtn"
+        android:layout_width="@dimen/ico_side"
+        android:layout_height="@dimen/ico_side"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_sentiment"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/takePictureBtn"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_ring"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/filterBtn"
+        android:layout_width="@dimen/ico_side"
+        android:layout_height="@dimen/ico_side"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_blur"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="invisible"
+        android:id="@+id/filterRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="invisible"
+        android:id="@+id/stickRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

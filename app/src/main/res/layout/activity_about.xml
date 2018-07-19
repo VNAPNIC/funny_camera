@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray">
+
+    <TextView
+        android:gravity="center"
+        android:textSize="@dimen/title_size"
+        android:padding="@dimen/title_padding"
+        android:text="@string/about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:background="@color/dodgerblue"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_view_margin"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardBackgroundColor="@color/white">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:textSize="@dimen/little_title_size"
+                style="@style/InfoText"
+                android:id="@+id/appTV"
+                android:text="Me"/>
+
+            <ImageView
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/versionIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_version"
+                app:layout_constraintTop_toBottomOf="@id/appTV" />
+
+            <TextView
+                style="@style/InfoText"
+                android:id="@+id/versionTV"
+                android:text="1.0"
+                app:layout_constraintLeft_toRightOf="@id/versionIV"
+                app:layout_constraintBottom_toBottomOf="@id/versionIV" />
+
+            <ImageView
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/licenseIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_license"
+                app:layout_constraintTop_toBottomOf="@id/versionIV" />
+
+            <TextView
+                style="@style/InfoText"
+                android:id="@+id/licenseTV"
+                android:text="LGPL"
+                app:layout_constraintLeft_toRightOf="@id/licenseIV"
+                app:layout_constraintBottom_toBottomOf="@id/licenseIV" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_view_margin"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardBackgroundColor="@color/white">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/authorTV"
+                android:textSize="@dimen/little_title_size"
+                style="@style/InfoText"
+                android:text="AUTHORS" />
+
+            <ImageView
+                android:id="@+id/teamIV"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_team"
+                app:layout_constraintTop_toBottomOf="@id/authorTV" />
+
+            <TextView
+                android:id="@+id/teamTV"
+                style="@style/InfoText"
+                android:text="W,J,S,H,W,Z"
+                app:layout_constraintLeft_toRightOf="@id/teamIV"
+                app:layout_constraintBottom_toBottomOf="@id/teamIV" />
+
+            <ImageView
+                android:id="@+id/mailIV"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_mail"
+                app:layout_constraintTop_toBottomOf="@id/teamIV" />
+
+            <TextView
+                style="@style/InfoText"
+                android:id="@+id/mailTV"
+                android:text="linglongxinshi@gmail.com"
+                app:layout_constraintLeft_toRightOf="@id/mailIV"
+                app:layout_constraintBottom_toBottomOf="@id/mailIV" />
+
+            <ImageView
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/webIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_web"
+                app:layout_constraintTop_toBottomOf="@id/mailIV"/>
+
+            <TextView
+                style="@style/InfoText"
+                android:id="@+id/webTV"
+                android:text="linglongxinshi.top"
+                app:layout_constraintLeft_toRightOf="@id/webIV"
+                app:layout_constraintBottom_toBottomOf="@id/webIV"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
